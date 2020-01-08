@@ -8,7 +8,7 @@ public class binarySearch {
 	{
 		
 		System.out.println("Enter array Length");
-		int val = 3;
+		int val = 5;
 	
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
@@ -17,9 +17,9 @@ public class binarySearch {
 		{
 			arr[i] = sc.nextInt();
 		}
-		ByLinearSearch(arr, val);
+	//	ByLinearSearch(arr, val);
 		
-		ByBinarySearch(arr, val);
+		binarySearchByRecursion(arr, val, 0, n-1);
 		
 		
 	}
@@ -94,6 +94,29 @@ public class binarySearch {
 		
 	
 		}
+	
+	public static void binarySearchByRecursion(int[] arr, int val, int low, int high)
+	{
+		
+		int mid = (low+high)/2;
+		
+		if(arr[mid] == val)
+		{
+			System.out.println("Yes");
+			
+		}
+		
+		else if(arr[mid] > val)
+		{
+			binarySearchByRecursion(arr, val, low ,mid-1);
+		}
+		else
+		{
+			binarySearchByRecursion(arr, val, mid+1 ,high);
+
+		}
+		
+	}
 	
 	
 

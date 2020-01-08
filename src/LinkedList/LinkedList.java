@@ -81,6 +81,16 @@ public class LinkedList {
 		}
 	}
 	
+	public static void print1(ReverseLinkedList list)
+	{
+		
+		while(head != null)
+		{
+			System.out.println(head.data);
+			head = head.next;
+		}
+	}
+	
 	
 
 }

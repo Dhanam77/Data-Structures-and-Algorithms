@@ -23,16 +23,23 @@ public class Queue {
 		
 	}
 	
-	public void dequeue()
+	public boolean isEmpty()
+	{
+		return size == 0;
+	}
+	
+	public int dequeue()
 	{
 		queue[front] = 0;
 		front++;
 		size--;
+		
+		return queue[front];
 	}
 	
-	public void peek()
+	public int peek()
 	{
-		System.out.println(queue[front]);
+		return queue[front];
 	}
 	
 	public void show()
