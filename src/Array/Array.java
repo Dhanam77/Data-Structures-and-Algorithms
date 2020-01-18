@@ -1,4 +1,4 @@
-package Algorithms;
+package Array;
 
 public class Array {
 	

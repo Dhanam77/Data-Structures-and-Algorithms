@@ -1,7 +1,7 @@
 package Stacks;
 import java.util.Stack;
 
-public class DS3 {
+public class MaxElementInStack {
 	
 	private Stack<Integer> myStack = new Stack<>();
 	
@@ -32,7 +32,7 @@ public class DS3 {
 	
 	public static void main(String[] args)
 	{
-		DS3 ds3 = new DS3();
+		MaxElementInStack ds3 = new MaxElementInStack();
 		ds3.push(5);
 		ds3.push(4);
 		ds3.push(7);

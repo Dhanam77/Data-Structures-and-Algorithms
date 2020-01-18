@@ -139,14 +139,14 @@ public class SudokuSolver {
 	public static void main(String[] args)
 	{
 		
-		SudokuSolver sudoku = new SudokuSolver();
-		System.out.println("Grid to be solved: ");
-		sudoku.display();
 		
-		if(sudoku.solve())
+		System.out.println("Grid to be solved: ");
+		SudokuSolver.display();
+		
+		if(SudokuSolver.solve())
 		{
 			System.out.println("Sudoku Solved using BackTracking");
-			sudoku.display();
+			SudokuSolver.display();
 		}
 		else
 		{

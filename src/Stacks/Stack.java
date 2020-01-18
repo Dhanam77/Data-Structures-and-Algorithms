@@ -3,23 +3,29 @@ package Stacks;
 public class Stack {
 	
 	int size;
-	int[] arr;
+	Object[] arr;
 	int top = -1;
 	
 	Stack(int size)
 	{
 		this.size = size;
-		arr = new int[size];
+		arr = new Object[size];
 	}
 	
 	Stack()
 	{
 		this.size = 10;
-		arr = new int[10];
+		arr = new Object[10];
 
 	}
 	
-	public void push(int value)
+	
+	public Object peek()
+	{
+		return arr[top];
+	}
+	
+	public void push(Object value)
 	{
 		
 		if(top == size - 1)
@@ -35,7 +41,7 @@ public class Stack {
 		
 	}
 	
-	public int pop()
+	public Object pop()
 	{
 		if(top < 0)
 		{

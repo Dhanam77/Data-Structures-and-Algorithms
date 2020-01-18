@@ -1,13 +1,13 @@
 package Stacks;
 import java.util.Stack;
 
-class DS2 {
+class MinElementInStack {
 	
 	private Stack<Integer> checkMinStack;
 	private Stack<Integer> mainStack;
 	private int minNumber;
 	
-	public DS2()
+	public MinElementInStack()
 	{
 		//create an empty stack
 		
@@ -60,7 +60,7 @@ class DS2 {
 	
 	public static void main(String args[])
 	{
-		DS2 ds2 = new DS2();
+		MinElementInStack ds2 = new MinElementInStack();
 		ds2.push(5);
 		ds2.push(7);
 		ds2.push(3);

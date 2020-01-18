@@ -1,5 +1,7 @@
 package BackTracking;
 
+import java.util.Stack;
+
 public class RatMaze {
 	
 	static int[][] maze = { { 1, 1, 1, 0 }, 
@@ -16,6 +18,7 @@ public class RatMaze {
 		System.out.println("Maze to be solved...");
 		printMaze(maze);
 		solveMaze();
+		
 	}
 	
 	public static boolean solveMaze()

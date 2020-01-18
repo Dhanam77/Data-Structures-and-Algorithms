@@ -29,11 +29,11 @@ public class BST {
 		{
 			if(root.data < data)
 			{
-				insert(root.right, data);
+				root.right = insert(root.right, data);
 			}
 			else 
 			{
-				insert(root.left, data);
+				root.left = insert(root.left, data);
 			}
 		}
 		
@@ -50,5 +50,33 @@ public class BST {
 			printInOrder(root.right);
 		}
 	}
+	
+	public static String search(Node root, int data)
+	{
+		if(root == null)
+		{
+			return "No";
+		}
+		else if(root.data == data)
+		{
+			return "Yes";
+		}
+		else
+		{
+			if(root.data < data)
+			{
+				search(root.right, data);
+			}
+			else if(root.data > data)
+			{
+				search(root.left, data);
+			}
+		}
+		
+		return "nN";
+		
+	}
+
+	public Node root;
 
 }
