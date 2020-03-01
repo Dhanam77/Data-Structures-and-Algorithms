@@ -6,24 +6,26 @@ public class Runner {
 	public static void main(String[] args)
 	{
 		
-		LinkedList list1 = new LinkedList();
+		LinkedList list = new LinkedList();
 		
-	/*	list.insert(5);
+		list.insert(5);
 		list.insert(12);
 		list.insert(332);
 		list.insert(32);
 		list.insert(42);
 		list.insert(52);
 		
-		list.insertAt(0, 22);
 
+
+		list.print();
 		
-
-		list.print(list);
-
-	*/
+		System.out.println(list.length());
 		
-		ReverseLinkedList list = new ReverseLinkedList();
+		System.out.println(list.getNode(3));
+System.out.println(list.getMiddle());
+	
+		
+	/*	ReverseLinkedList list = new ReverseLinkedList();
 		 list.head = new Node(85); 
 	     list.head.next = new Node(15); 
 	     list.head.next.next = new Node(4); 
@@ -32,7 +34,7 @@ public class Runner {
          list.reverse(list.head);
          list1.print1(list);
          
-		
+		*/
 	}
 
 }

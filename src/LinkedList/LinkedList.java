@@ -4,6 +4,43 @@ public class LinkedList {
 	
 	static Node head = null;
 	
+	
+	
+	
+	public static int rotate(Node head, int k)
+	{
+		
+		Node curr = head;	//Get reference to head
+		
+		int i = 1;
+		
+		while(i < k)
+		{
+			
+			curr = curr.next;
+			i++;
+		}
+		
+		Node newNode = curr;
+		
+		while(curr.next != null)
+		{
+			curr = curr.next;
+			
+		}
+		
+		curr.next = head;
+		
+		head = newNode.next;
+		newNode.next = null;
+		
+		return head.data;
+		
+	}
+	
+	
+	
+	
 	public static void insert(int data)
 	{
 		
@@ -74,14 +111,67 @@ public class LinkedList {
 	}
 	
 	
-	public static void print(LinkedList list)
+	public static void print()
+	{
+	
+		Node curr = head;
+		while(curr != null)
+		{
+			System.out.println(curr.data);
+
+			curr = curr.next;
+
+		}
+	}
+	
+	public static int getMiddle()
 	{
 		
-		while(head != null)
+		
+		Node curr1 = head;
+		Node curr2 = head;
+		
+		while(curr2.next.next != null)
 		{
-			System.out.println(head.data);
-			head = head.next;
+			curr2 = curr2.next.next;
+			curr1 = curr1.next;
 		}
+		
+		return curr1.data;
+		
+	}
+	
+	public static int getNode(int index)
+	{
+		if(index == 1)
+		{
+			return head.data;
+		}
+		else
+		{
+			int i = 2;
+			Node curr = head.next;
+			while(i != index)
+			{
+				curr = curr.next;
+				i++;
+			}
+			
+			return curr.data;
+		}
+	}
+	
+	public static int length()
+	{
+		int count = 0;
+		Node curr = head;
+		while(curr != null)
+		{
+			count++;
+			curr = curr.next;
+		}
+	
+		return count;
 	}
 	
 	public static void print1(ReverseLinkedList list)
@@ -97,3 +187,4 @@ public class LinkedList {
 	
 
 }
+
