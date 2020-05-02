@@ -29,6 +29,7 @@ public class RemoveSpaces {
 		
 		
 		
+		
 		return s.replace(" ", "");		
 		
 		

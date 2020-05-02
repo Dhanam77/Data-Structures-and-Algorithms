@@ -18,7 +18,7 @@ public class DifferentAdjacentCharacters {
 		System.out.println(manipulateString(s));
 		
 		
-		
+		 
 	}
 	
 	public static String manipulateString(String s)

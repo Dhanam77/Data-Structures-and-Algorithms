@@ -1,6 +1,6 @@
 package Sorting;
 
-import java.util.*;;
+import java.util.*;
 
 public class BigSorting {
 	
@@ -24,7 +24,7 @@ public class BigSorting {
 			System.out.println(arr[i]);
 		}
 		
-		
+		 
 	}
 
 }
@@ -50,6 +50,8 @@ class sorter implements Comparator<String>
 				return result;
 			}
 		}
+		
+	//	return x.compareTo(y);		-- Alternate method
 		
 		
 		return 0;

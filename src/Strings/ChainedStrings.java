@@ -13,7 +13,7 @@ public class ChainedStrings {
 	public static void main(String[] args)
 	{
 		
-		String[] arr = {"My", "MYam", "Men"};
+		String[] arr = {"My", "Yam", "Men"};
 		
 		
 		System.out.println(res(arr));

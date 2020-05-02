@@ -19,7 +19,7 @@ public class LinkedList {
 			
 			curr = curr.next;
 			i++;
-		}
+		} 
 		
 		Node newNode = curr;
 		

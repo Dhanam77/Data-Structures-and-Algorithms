@@ -33,7 +33,7 @@ public class AtivitySelection {
 			if(startTime[i] > endTime[j])
 			{
 				count++;
-				j=i;
+				j++;
 			}
 		}
 		

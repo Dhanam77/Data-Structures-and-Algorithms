@@ -19,7 +19,9 @@ public class binarySearch {
 		}
 	//	ByLinearSearch(arr, val);
 		
-		binarySearchByRecursion(arr, val, 0, n-1);
+		//binarySearchByRecursion(arr, val, 0, n-1);
+		
+		ByBinarySearch(arr,val);
 		
 		
 	}
@@ -57,17 +59,17 @@ public class binarySearch {
 		 * By Binary Search
 		 */
 		
-		long b = System.currentTimeMillis();
 		int low = 0;
 		int high = arr.length - 1;
-		int mid = (low+high)/2;
 		
 		
 		Arrays.sort(arr);
 		
 		
-		while(low < high)
+		while(low <= high)
 		{
+			int mid = low + (high-low)/2;
+
 			
 			if(arr[mid] < val)
 			{
@@ -88,17 +90,17 @@ public class binarySearch {
 			}
 		}
 		
-		System.out.println("Time for binary Searh " + (b - System.currentTimeMillis()));
 
-		
+		System.out.println("No");
+
 		
 	
 		}
 	
-	public static void binarySearchByRecursion(int[] arr, int val, int low, int high)
+/*	public static void binarySearchByRecursion(int[] arr, int val, int low, int high)
 	{
 		
-		int mid = (low+high)/2;
+		int mid = low + (high-low)/2;
 		
 		if(arr[mid] == val)
 		{
@@ -117,7 +119,7 @@ public class binarySearch {
 		}
 		
 	}
-	
+	*/
 	
 
 }

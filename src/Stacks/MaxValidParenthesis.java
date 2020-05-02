@@ -13,7 +13,7 @@ public class MaxValidParenthesis {
 	{
 		
 		
-		String s = ")()())";
+		String s = ")()))()()(())";
 		
 		System.out.println(findMax(s));
 		
@@ -30,6 +30,8 @@ public class MaxValidParenthesis {
 		
 		char[] arr = s.toCharArray();
 		
+        System.out.println('c' - 'a');
+
 		for(int i = 0;i < arr.length; i++)
 		{
 			
@@ -37,6 +39,8 @@ public class MaxValidParenthesis {
 			{
 				myStack.push(arr[i]);
 			}
+			
+			
 			
 			else
 			{

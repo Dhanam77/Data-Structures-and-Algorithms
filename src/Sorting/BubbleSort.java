@@ -16,7 +16,7 @@ public class BubbleSort {
 	public static void main(String[] args)
 	{
 		
-		int[] arr = {1,2,3,4,5,6};
+		int[] arr = {1,2,3,7,5,6};
 		
 		bubbleSort(arr);
 		
@@ -24,10 +24,11 @@ public class BubbleSort {
 	
 	public static void bubbleSort(int[] arr)
 	{
-		boolean isSwapped = false;
 		int n = arr.length;
 		for(int i = 0;i < n-1; i++)
 		{
+			boolean isSwapped = false;
+
 			for(int j = 0;j < n - 1; j++) 		// or n - i - 1
 			{
 				if(arr[j] > arr[j+1])

@@ -20,7 +20,7 @@ public class KnapSack {
 		Scanner sc = new Scanner(System.in);
 		int[] val = {10, 40, 60, 40};
 		int[] wt = {2,4,3,8};
-		
+		 
 		
 		System.out.println("Enter Capacity: ");		//Get capacity
 		int cap = sc.nextInt();

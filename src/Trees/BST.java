@@ -73,7 +73,7 @@ public class BST {
 			}
 		}
 		
-		return "nN";
+		return "No";
 		
 	}
 

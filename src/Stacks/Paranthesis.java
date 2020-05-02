@@ -23,7 +23,7 @@ public class Paranthesis {
 		for(char c : s.toCharArray())
 		{
 			if(c == '{' || c == '(' || c == '[')
-			{
+			{ 
 				stack.push(c);
 			}
 			

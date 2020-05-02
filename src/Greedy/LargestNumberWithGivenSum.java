@@ -21,7 +21,7 @@ public class LargestNumberWithGivenSum {
 		findPassword(numOfDigits, sum);
 		
 	}
-	
+	 
 	public static void findPassword(int N, int S)
 	{
 		int[] result = new int[N];

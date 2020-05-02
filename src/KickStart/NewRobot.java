@@ -17,8 +17,7 @@ public class NewRobot {
 		grid[startRow][startColumn] = 1;
 		
 		
-		char[] arr = query.toCharArray();
-		
+		char[] arr = query.toCharArray();		
 		int[] array = new int[2];
 		
 		for(char c : arr)

@@ -11,7 +11,7 @@ public class FacingTheSun {
 	
 	public static void main(String[] args)
 	{
-		int[] arr = {7, 4 ,8, 2, 9};
+		int[] arr = {7, 4 ,8, 2, 9};	//Should output 3
 		
 		
 		System.out.println(countNumberOfbuildings(arr));

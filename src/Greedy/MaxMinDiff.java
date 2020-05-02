@@ -16,7 +16,7 @@ public class MaxMinDiff {
 		
 	}
 	
-	 static int maxMin(int k, int[] arr) {
+	 static int maxMin(int k, int[] arr) { 
 
 	        Arrays.sort(arr);
 	        int difference = Integer.MAX_VALUE;

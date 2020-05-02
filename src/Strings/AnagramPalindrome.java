@@ -11,7 +11,7 @@ public class AnagramPalindrome {
 	
 	public static void main(String[] args)
 	{
-		String s = "abcdoooeeabcde";
+		String s = "abcdoooeeabcd";
 		final int chars = 256;
 		
 		int[] count = new int[chars];

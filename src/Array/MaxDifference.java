@@ -23,31 +23,32 @@ public class MaxDifference {
 	static int findMaxDiff(int[] arr)
 	{
 		
-		int maxDifference = 0;
+		int maxCount = 0;
 
 		
 		
-		
+		int count,j;
 		for(int i = 0;i < arr.length; i++)
 			
 		{
-			int j = i+1;
-			int k = 0;
-			while(j < arr.length && arr[i] <= arr[j])
+			j = arr.length - 1;
+			while(arr[j] < arr[i])
 			{
-				k++;
-				j++;
+				j--;
 			}
 			
-			if(k > maxDifference)
+			count = j-i;
+			
+			if(maxCount < count)
 			{
-				maxDifference = k;
+				maxCount = count;
 			}
+
 		}
 		
 		
 		
-		return maxDifference;
+		return maxCount;
 		
 		
 		

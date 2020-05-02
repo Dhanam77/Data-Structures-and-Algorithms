@@ -35,7 +35,7 @@ public class MaxChores {
 				total += choreMins[i];
 				i++;
 				
-			}
+			} 
 			
 			else
 			{

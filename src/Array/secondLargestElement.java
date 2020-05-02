@@ -19,7 +19,7 @@ public class secondLargestElement {
 	
 	public static void main(String[] args)
 	{
-		int[] arr = {3,7,2,16,16,13};
+		int[] arr = {3,7,2,16,16,17,13};
 		int n = arr.length;
 		
 		Arrays.sort(arr);
@@ -28,7 +28,7 @@ public class secondLargestElement {
 		
 		for(int i = n-2; i >= 0; i--)
 		{
-			if(arr[i] != arr[n-1])
+			if(arr[i] != arr[i+1])
 			{
 				System.out.println(arr[i]);
 				break;

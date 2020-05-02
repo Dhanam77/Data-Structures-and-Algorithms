@@ -38,15 +38,15 @@ public class MissingElementArray {
 	public static int FindMissing(int[] array)
 	{
 		int n = array.length;
-		for(int i =0;i < n-1; i++)
+		
+		int sum = 0;
+		
+		for(int i = 0;i < array.length; i++)
 		{
-			if(array[i+1] != array[i] + 1)
-			{
-				return array[i] + 1;
-			}
+			sum += array[i];
 		}
 		
-		return -1;
+		return ((((n+1)*(n+2))/2) - sum);
 		
 		
 		

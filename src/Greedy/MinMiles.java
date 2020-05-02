@@ -37,7 +37,7 @@ public class MinMiles {
 
 
     public static void main(String[] args) throws IOException {
-
+ 
         int[] calorie = {1,3,2};
 
         long result = marcsCakewalk(calorie);

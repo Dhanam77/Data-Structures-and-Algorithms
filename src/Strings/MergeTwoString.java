@@ -18,7 +18,7 @@ public class MergeTwoString {
 	}
 	
 	
-	public static String merge(String a, String b)
+	public static String merge(String a, String b) 
 	{
 		StringBuilder sb = new StringBuilder();
 		int i = 0, j = 0;

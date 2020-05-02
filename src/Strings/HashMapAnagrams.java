@@ -12,7 +12,7 @@ public class HashMapAnagrams {
 
         if(a.length() != b.length())
         {
-            return false;
+            return false; 
         }
 
 
