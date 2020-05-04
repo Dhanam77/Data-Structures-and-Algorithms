@@ -25,10 +25,13 @@ public class SelectionSort {
 			{
 				if(arr[j] < arr[minIndex])
 				{
-					int temp = arr[minIndex];
-					arr[minIndex] = arr[j];
-					arr[j] = temp;				}
+					minIndex = j;
+				}
 			}
+			
+			int temp = arr[i];
+			arr[i] = arr[minIndex];
+			arr[minIndex] = temp;
 				
 
 		}
