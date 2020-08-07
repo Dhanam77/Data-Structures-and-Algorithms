@@ -31,9 +31,6 @@ public class HighestNumber {
 	
 	static String highestNumber(List<String> list)
 	{
-		
-		
-		
 		Collections.sort(list, new sorter());
 		StringBuilder sb = new StringBuilder();
 		for(String s : list)
@@ -58,12 +55,6 @@ class sorter implements Comparator<String>
 		String X = o1 + o2;
 		String Y = o2 + o1;
 		
-		return X.compareTo(Y)>0?-1:1;
-		
-	}
-	
-	
-	
-	
-	
+		return Y.compareTo(X);	
+	}	
 }

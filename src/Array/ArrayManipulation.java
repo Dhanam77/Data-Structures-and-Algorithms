@@ -9,7 +9,7 @@ public class ArrayManipulation {
 	 * Find min element, subtract it from remaining elements
 	 * and remove it from list
 	 *  
-	 */
+	 */ 
 	
 	public static void main(String[] args)
 	{

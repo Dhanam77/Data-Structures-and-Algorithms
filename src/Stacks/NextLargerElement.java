@@ -5,9 +5,6 @@ public class NextLargerElement {
 	public static void main(String[] args)
 	{
 		int[] arr = {3,5,7,2,8};
-		
-		
-		
 		System.out.println(findNextLargerElement(arr));
 	}
 	
@@ -25,8 +22,6 @@ public class NextLargerElement {
 				}
 			}
 		}
-		
-		
 		return -1;
 	}
 

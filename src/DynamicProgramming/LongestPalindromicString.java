@@ -8,7 +8,7 @@ public class LongestPalindromicString {
 	{
 		
 		
-		String s = "ABBDCACBBCAADCBBCABABCBABBABAABBAA";
+		String s = "ABCACDBA";
 		
 		char[] arr = s.toCharArray();
 		
@@ -19,7 +19,7 @@ public class LongestPalindromicString {
 	}
 
 	private static int LPS(char[] arr, int n, int m) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method  stub
 		
 		
 		int[][] dp = new int[m+1][m+1];

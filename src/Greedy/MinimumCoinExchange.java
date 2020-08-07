@@ -4,7 +4,7 @@ import java.util.*;
 
 public class MinimumCoinExchange {
 	
-	static int[] denominations = { 1, 2, 5, 10, 20, 50, 100, 500, 1000};
+	static int[] denominations = {  5, 10, 20, 50, 36, 356, 408};
 	static int count = 0, i = 0;
 	static int[] reqd = new int[denominations.length];
 
@@ -12,13 +12,14 @@ public class MinimumCoinExchange {
 	public static void main(String[] args)
 	{
 		
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter value: ");
 		
 		int val = sc.nextInt();
 		
-		
+		 
 		
 		System.out.println("Min coins reqd are: " + getCoinsCount(val));
 		System.out.print("Denominations are: ");

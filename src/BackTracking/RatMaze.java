@@ -18,9 +18,15 @@ public class RatMaze {
 		System.out.println("Maze to be solved...");
 		printMaze(maze);
 		solveMaze();
+		solveUsingBFS();
 		
 	}
 	
+	private static void solveUsingBFS() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	public static boolean solveMaze()
 	{
 		int[][] soln = new int[N][N];

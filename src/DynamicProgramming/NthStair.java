@@ -16,7 +16,7 @@ public class NthStair {
 		
 		System.out.println(findWays(n));
 		
-		
+		 
 	}
 	
 	

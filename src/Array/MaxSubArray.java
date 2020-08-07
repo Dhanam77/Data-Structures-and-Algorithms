@@ -8,7 +8,7 @@ public class MaxSubArray {
 	 * Find max subArray 
 	 * 
 	 * 
-	 */
+	 */ 
 	
 	public static void main(String[] args)
 	{

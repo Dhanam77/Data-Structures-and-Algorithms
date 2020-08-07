@@ -7,7 +7,7 @@ public class Knapsack {
 	{
 		
 		
-		int[] val = { 20, 5, 10, 40, 15, 25 };
+		int[] val = { 20, 5, 10, 60, 15, 25 };
 		int[] wt = {  1, 2,  3,  8,  7, 4 };
 		
 		int cap = 10;

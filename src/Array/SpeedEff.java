@@ -24,7 +24,7 @@ public class SpeedEff {
 	        return maxPerformance;
 	        
 	        
-	        
+	         
 	    }
 	    
 	    public int getMin(int[] efficiency, int k, int i)

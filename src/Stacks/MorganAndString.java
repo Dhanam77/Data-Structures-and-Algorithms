@@ -19,7 +19,7 @@ public class MorganAndString {
 	        Stack<Character> stack2 = new Stack<>();
 	        Queue<Character> queue1 = new LinkedList<>();
 	        Queue<Character> queue2 = new LinkedList<>();
-
+ 
 
 	        for(int i = a.length() - 1; i >= 0; i--)
 	        {

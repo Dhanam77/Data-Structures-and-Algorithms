@@ -13,7 +13,7 @@ public class FredoAndArrayUpdate {
 		
 		
 	}
-	
+	 
 	
 	static int findMin(int[] arr)
 	{

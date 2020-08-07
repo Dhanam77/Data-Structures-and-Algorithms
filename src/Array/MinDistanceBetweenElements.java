@@ -20,7 +20,7 @@ public class MinDistanceBetweenElements {
 		for(int i = 0;i < arr.length; i++)
 		{
 			if(arr[i] == a)
-				
+				 
 			{
 				isStarted = true;
 			}

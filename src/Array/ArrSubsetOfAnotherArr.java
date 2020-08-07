@@ -12,7 +12,7 @@ public class ArrSubsetOfAnotherArr {
 		
 		int[] arr1 = {1,6,5};
 		int[] arr2 = {1,4,7,3,5,6};
-		
+		 
 		
 		System.out.println(isSubset(arr1,arr2));
 		

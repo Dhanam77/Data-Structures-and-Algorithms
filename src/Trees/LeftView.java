@@ -17,7 +17,7 @@ public class LeftView {
 		
 	     findLeftView(bst.root);
 		
-	}
+	} 
 	
 	
 	
@@ -33,8 +33,6 @@ public class LeftView {
 		{
 			return;
 		}
-		
-		
 		else if(root.left == null && root.right == null)
 		{
 			return;

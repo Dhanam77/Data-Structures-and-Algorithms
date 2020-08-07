@@ -6,14 +6,33 @@ public class MaxProfitInStock {
 	public static void main(String[] args)
 	{
 		
-		int[] prices = {7,1,5,5,3,6,4};
+		int[] prices = {7,6,5,1,5,6,3,4};
 		
-		System.out.print(findMax(prices));
+		System.out.print(getMax(prices));
 		
 		
 	}
 	
-	static int findMax(int[] arr)
+	
+	static int getMax(int[] arr) {
+		int max = 0, curr = 0;
+		for(int i= 0;i < arr.length; i++) {
+			curr = 0;
+			int j=i+1;
+			while(j < arr.length && arr[j] < arr[j-1]) {
+				j++;
+			}
+			i = j-1;
+			while(j < arr.length && arr[j] >= arr[j-1]) {
+				j++;
+			}
+			max = Math.max(max, arr[j]-arr[i]);	
+		}
+		return max;
+	}
+	
+	
+	static int findMax(int[] arr) 
 	{
 		boolean isSold = true;
 		final int n = arr.length;

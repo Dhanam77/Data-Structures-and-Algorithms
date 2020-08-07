@@ -2,10 +2,7 @@ package LinkedList;
 
 public class LinkedList {
 	
-	static Node head = null;
-	
-	
-	
+	static Node head = null;	
 	
 	public static int rotate(Node head, int k)
 	{
@@ -38,12 +35,16 @@ public class LinkedList {
 		
 	}
 	
-	
-	
-	
+	public static void insertLast(int data) {
+		Node node = new Node(data);
+		Node curr = head;
+		while(curr.next != null) {
+			curr = curr.next;
+		}
+		curr.next = node;
+	}
 	public static void insert(int data)
-	{
-		
+	{	
 		Node node = new Node(data);
 		node.data = data;
 		node.next = null;
@@ -65,17 +66,12 @@ public class LinkedList {
 		}
 		
 		
-	}
-	
-	
-	
+	}	
 	
 	public static void insertAt(int index, int data)
 	{
-		
+
 		Node node = new Node(data);
-		node.data = data;
-		node.next = null;
 		Node n = head;
 		int i =0;
 		while(i < index-1)

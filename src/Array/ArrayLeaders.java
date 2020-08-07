@@ -19,6 +19,7 @@ public class ArrayLeaders {
 				}
 					
 			}
+			
 		}
 		
 		System.out.print(arr[arr.length - 1]);

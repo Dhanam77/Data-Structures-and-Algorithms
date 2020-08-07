@@ -3,9 +3,6 @@ package Trees;
 public class BST {
 	
 	
-	
-	
-	
 	public static Node createNewNode(int data)
 	{
 		Node node = new Node(data);

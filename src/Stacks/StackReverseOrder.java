@@ -28,7 +28,7 @@ public class StackReverseOrder {
 	}
 	public void pop()
 	{
-		originalStack.pop();
+		originalStack.pop( );
 	}
 	
 	

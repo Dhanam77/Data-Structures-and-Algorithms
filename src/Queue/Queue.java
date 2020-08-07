@@ -6,35 +6,55 @@ public class Queue {
 	 * Implementation of queue using Arrays
 	 */
 
-	int queue[] = new int[5];
-	int size = 0;
-	int front = 0, rear = 0;
+	int queue[];
+	int size;
+	int front = -1, rear = -1;
 
-	
+	public Queue(int cap) {
+		queue = new int[cap];
+		size = cap;
+	}
 	
 	
 	public void enqueue(int data)
 	{
+		if(front == -1) {
+			front++;
+		}
+		if(rear == size-1) {
+			System.out.println("Queue is full");
+		}
+		else {
+			queue[++rear] = data;
+			
+		}
 		
-		queue[rear] = data;
-		rear++;
-		size++;
 		
 		
 	}
 	
 	public boolean isEmpty()
 	{
-		return size == 0;
+		return front == rear;
 	}
 	
 	public int dequeue()
 	{
-		queue[front] = 0;
-		front++;
-		size--;
 		
-		return queue[front];
+		if(front == rear) {
+			System.out.println("Queue already empty");
+			return -1;
+		}
+
+		else {
+			int elem = queue[front];
+
+			queue[front] = 0;
+			front++;
+			return elem;
+	
+		}
+		
 	}
 	
 	public int peek()
@@ -44,7 +64,7 @@ public class Queue {
 	
 	public void show()
 	{
-		for(int i = front; i < rear; i++)
+		for(int i = front; i <= rear; i++)
 		{
 			System.out.print(queue[i] + " ");
 		}

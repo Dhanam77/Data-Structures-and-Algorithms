@@ -31,18 +31,14 @@ public class MaxDifference {
 		for(int i = 0;i < arr.length; i++)
 			
 		{
-			j = arr.length - 1;
-			while(arr[j] < arr[i])
+			j = i+1;
+			while(j < arr.length && arr[j] > arr[i])
 			{
-				j--;
+				j++;
 			}
-			
 			count = j-i;
 			
-			if(maxCount < count)
-			{
-				maxCount = count;
-			}
+			maxCount = Math.max(maxCount, count);
 
 		}
 		
@@ -55,6 +51,6 @@ public class MaxDifference {
 		
 		
 	}
-
+ 
 }
 	

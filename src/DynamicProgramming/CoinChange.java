@@ -12,7 +12,7 @@ public class CoinChange {
 		
 		int[] arr = {100,80,60,70,60,75,85};
 		
-		
+		 
 		int[] res = stockSpan(arr);
 		
 		for(int i = 0;i < res.length;i++)
@@ -29,7 +29,7 @@ public class CoinChange {
 	static int findIndex(String s, String x)
 	{
 		
-		return s.indexOf(x)>0?s.indexOf(x):-1;
+		return s.indexOf(x)>=0?s.indexOf(x):-1;
 		
 		
 		

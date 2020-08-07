@@ -24,7 +24,7 @@ public class TextEditor {
 		
 		
 	}
-	
+	 
 	
 	
 	static void performOperations(String[] queries)

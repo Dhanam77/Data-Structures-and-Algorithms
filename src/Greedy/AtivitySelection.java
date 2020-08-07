@@ -14,15 +14,15 @@ public class AtivitySelection {
 	
 	public static void main(String[] args)
 	{
-		int[] startTime = {1,3,2,5,8,5};
-		int[] endTime = {2,4,6,7,9,9};
+		int[] startTime = {1,3,5,2,5,8,5};
+		int[] endTime = {2,4,7,6,7,9,9};
 		
 		System.out.print(getMaxActivities(startTime, endTime));
 		
 		
 	}
 	
-	public static int getMaxActivities(int[] startTime, int[] endTime)
+	public static int  getMaxActivities(int[] startTime, int[] endTime)
 	{
 		Arrays.sort(endTime);
 		

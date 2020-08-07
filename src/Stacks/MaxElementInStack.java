@@ -19,7 +19,6 @@ public class MaxElementInStack {
 			}
 		}
 	}
-	
 	public void pop()
 	{
 		myStack.pop();
@@ -38,6 +37,7 @@ public class MaxElementInStack {
 		ds3.push(7);
 		ds3.pop();
 		ds3.push(6);
+		ds3.push(7);
 		
 		System.out.println("Max is " + ds3.returnMax());
 	}

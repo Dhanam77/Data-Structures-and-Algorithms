@@ -11,26 +11,18 @@ public class BetweenTwoSets {
 	 * Find numbers that has factors in first array and which are themselves factors for all elements
 	 * in second array 
 	 * 
-	 */
+	 */ 
 	
 	
 	public static void main(String[] args)
 	{
-		int[] a = {2,4};
-		
+		int[] a = {2,4};		
 		int[] b = {16, 32, 96};
-		
-		
-		getNumbers(a,b);
-		
-		
+		getNumbers(a,b);		
 	}
-	
-	
+
 	static void getNumbers(int[] a, int[] b)
 	{
-		
-		
 		int first = a[a.length - 1];
 		int last = b[0];
 		
@@ -54,11 +46,7 @@ public class BetweenTwoSets {
 					isValid = false;
 					break;
 				}
-			}
-			
-			
-
-			
+			}	
 			if(isValid)
 			{
 				System.out.print(i + " ");

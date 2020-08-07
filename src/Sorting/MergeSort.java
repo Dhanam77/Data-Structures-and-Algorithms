@@ -9,7 +9,7 @@ public class MergeSort {
         for (int i=0; i<n; ++i) 
             System.out.print(arr[i] + " "); 
         System.out.println(); 
-    } 
+    }  
   
     // Driver method 
     public static void main(String args[]) 
@@ -90,9 +90,10 @@ public class MergeSort {
         if (l < r) 
         { 
             // Find the middle point 
-            int m = (l+r)/2; 
+            int m = l + (r-l)/2; 
   
-            // Sort first and second halves 
+            //Recursively break array into two halves until only one element
+       
             sort(arr, l, m); 
             sort(arr , m+1, r); 
   

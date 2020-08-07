@@ -11,16 +11,38 @@ public class MaxValidParenthesis {
 	
 	public static void main(String[] args)
 	{
+		String s = "()()()()))(()()(())))";
+		
+		//System.out.println(findMax(s));
+		
+		Stack<Character> stack = new Stack<>();
+		int maxValid = 0;
+		for(int i = 0;i < s.length(); i++) {
+			if(stack.isEmpty()) {
+				stack.push(s.charAt(i));
+			}
+			else {
+				if(s.charAt(i) == '(') {
+					stack.push(s.charAt(i));
+				}
+				else {
+					if(stack.peek() == '(') {
+						maxValid += 2;
+						stack.pop();
+					}
+					else {
+						stack.push(s.charAt(i));
+					}
+				}
+			}
+		}
+		System.out.println(maxValid);
 		
 		
-		String s = ")()))()()(())";
 		
-		System.out.println(findMax(s));
-		
-		
-	}
 	
-	
+	} 
+	/*
 	public static int findMax(String s)
 	{
 		
@@ -33,15 +55,12 @@ public class MaxValidParenthesis {
         System.out.println('c' - 'a');
 
 		for(int i = 0;i < arr.length; i++)
-		{
-			
+		{	
 			if(myStack.isEmpty() || arr[i] == '{' || arr[i] == '[' || arr[i] == '(')
 			{
 				myStack.push(arr[i]);
 			}
-			
-			
-			
+				
 			else
 			{
 				
@@ -75,6 +94,6 @@ public class MaxValidParenthesis {
 		
 		
 	}
-	
+	*/
 
 }

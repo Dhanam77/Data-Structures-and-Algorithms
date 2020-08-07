@@ -13,31 +13,23 @@ public class KnapSack {
 	 * 
 	 */
 	
-	
 	public static void main(String[] args)
 		{
 		
 		Scanner sc = new Scanner(System.in);
-		int[] val = {10, 40, 60, 40};
+		int[] val = {10, 40, 60, 40}; 
 		int[] wt = {2,4,3,8};
 		 
 		
 		System.out.println("Enter Capacity: ");		//Get capacity
 		int cap = sc.nextInt();
 		
-		System.out.println(getMaxValue(val, wt, cap));
-		
-		
-		
-		
+		System.out.println(getMaxValue(val, wt, cap));	
 		}
-	
-	
-	
 	
 	public static double getMaxValue(int[] val, int[] wt, int cap)
 	{
-		
+		 
 		double totalVal = 0;
 		
 		costValue[] costs = new costValue[wt.length];		//Create an array of type costValue
@@ -46,8 +38,6 @@ public class KnapSack {
 		{
 			costs[i] = new costValue(wt[i], val[i]);
 		}
-		
-		
 		Arrays.sort(costs, new Comparator<costValue>()			//Sort the array based on cost value
 		{
 			public int compare(costValue ob1, costValue ob2)
@@ -89,12 +79,8 @@ public class KnapSack {
 		{
 			this.wt = wt;
 			this.val = val;
-			
-			cost = new Double(val/wt);
-			
+			cost = (double)val/wt;	
 		}
-		
-		
 	}
 
 }
